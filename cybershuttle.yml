@@ -1,0 +1,29 @@
+project:
+  name: "skynet-ddp-slurm-example"
+  description: "PyTorch skynet"
+  homepage: "https://github.com/cyber-shuttle/mfc-cybershuttle"
+  authors:
+    - pjaya001@odu.edu
+    - spamidig@gatech.edu
+  tags:
+    - CISSE25
+ 
+workspace:
+  location: /workspace
+  resources:
+    min_cpu: 4
+    min_mem: 8192
+    min_gpu: 0
+    gpu_mem: 0
+  model_collection: []
+  data_collection: []
+ 
+additional_dependencies:
+  conda:
+    - python=3.10
+    - pip
+    - pytorch
+    - torchvision
+    - ifcfg
+    - tqdm
+  pip: []
